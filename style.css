@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
   margin: 0;
@@ -19,6 +22,16 @@ body {
 section {
   padding: 80px 20px;
   text-align: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+p {
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* HERO */
@@ -58,19 +71,30 @@ section {
 
 button {
   margin-top: 30px;
-  padding: 12px 25px;
+  padding: 14px 28px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
+
   background: white;
   color: #ff4b6e;
-  transition: 0.3s;
+
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease,
+    color 0.4s ease;
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 75, 110, 0.4);
+  background: #ff4b6e;
+  color: white;
 }
+
 
 /* PHOTO GRID */
 .photo-grid {
