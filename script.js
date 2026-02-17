@@ -1,12 +1,12 @@
 // Typing effect
-const text = "Today is special because YOU were born 💕";
+const text = "to my dear slowpoke , puffer fish , miss cat persona & anyaaaa hehe:)  💕";
 let i = 0;
 
 function typeWriter() {
   if (i < text.length) {
     document.querySelector(".typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeWriter, 50);
+    setTimeout(typeWriter, 90);
   }
 }
 
