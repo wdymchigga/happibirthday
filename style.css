@@ -32,13 +32,16 @@ section {
 .title {
   font-family: 'Dancing Script', cursive;
   font-size: 4rem;
+  color: #7a1e3a
+
   animation: glow 2s infinite alternate;
 }
 
 .typing {
-  margin-top: 20px;
-  font-size: 1.2rem;
+  color: #4b006e;
+  text-shadow: 0 0 5px rgba(255,255,255,0.3);
 }
+
 
 button {
   margin-top: 30px;
