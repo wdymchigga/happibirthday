@@ -138,13 +138,26 @@ button:hover {
   animation: float 6s ease-in-out infinite;
 }
 
-.s1 { top: 10%; left: 5%; }
-.s2 { top: 60%; right: 5%; }
-.s3 { bottom: 10%; left: 40%; }
+.s1 {
+  top: 10%;
+  left: 5%;
+  transform: translateY(-20px) rotate(-10deg);
+}
 
-.s1 { transform: rotate(-10deg); }
-.s2 { transform: rotate(8deg); }
-.s3 { transform: rotate(-5deg); }
+.s2 {
+  top: 75%;   /* was 60% */
+  right: 5%;
+  transform: rotate(8deg);
+}
+
+.s3 {
+  bottom: 5%;   /* lower than before */
+  left: 20%;    /* move more left */
+  transform: rotate(-5deg);
+}
+
+
+
 
 @keyframes float {
   0% { transform: translateY(0px); }
