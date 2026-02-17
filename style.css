@@ -95,6 +95,13 @@ button:hover {
   color: white;
 }
 
+.spacer {
+  height: 100vh;   /* full extra screen scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* PHOTO GRID */
 .photo-grid {
@@ -154,6 +161,43 @@ button:hover {
   bottom: 5%;   /* lower than before */
   left: 20%;    /* move more left */
   transform: rotate(-5deg);
+}
+.mid-btn {
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  background: #ff4b6e;
+  color: white;
+
+  transition: all 0.4s ease;
+}
+
+.mid-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(255, 75, 110, 0.5);
+}
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  background: #8b1e3f;
+  color: white;
+
+  display: none;
+  transition: 0.3s ease;
+}
+
+#topBtn:hover {
+  background: #ff4b6e;
 }
 
 
