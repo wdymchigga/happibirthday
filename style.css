@@ -26,16 +26,26 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;   /* moves content up */
+  align-items: center;
+  padding-top: 120px;            /* adjust this value */
 }
+
 
 .title {
   font-family: 'Dancing Script', cursive;
-  font-size: 4rem;
-  color: #7a1e3a
+  font-size: 4.8rem;
+  text-align: center;
 
-  animation: glow 2s infinite alternate;
+  background: linear-gradient(45deg, #ff2e63, #ff85a2, #ff4b6e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  filter: drop-shadow(0 0 8px rgba(255, 75, 110, 0.8));
+  animation: glowPulse 2s ease-in-out infinite alternate;
 }
+
+
 
 .typing {
   color: #4b006e;
@@ -115,6 +125,14 @@ button:hover {
   100% { transform: translateY(0px); }
 }
 
+@keyframes glowPulse {
+  from {
+    filter: drop-shadow(0 0 8px rgba(255, 75, 110, 0.6));
+  }
+  to {
+    filter: drop-shadow(0 0 18px rgba(255, 20, 147, 1));
+  }
+}
 
 /* ANIMATIONS */
 @keyframes glow {
